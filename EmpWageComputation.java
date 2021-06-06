@@ -12,7 +12,10 @@ package bridgelabz;
 import java.util.Random;
 
 class EmployeeWage {
+    public static final int EMP_RATE_PER_HOUR = 20;
     int isPresent = 1;
+    int empHrs = 0;
+    int empWage;
 
     /**
      * Method for taking attendance of employee.
@@ -22,9 +25,18 @@ class EmployeeWage {
         int empCheck = (int) Math.floor(Math.random() * 10) % 2;
         if (empCheck == isPresent) {
             System.out.println("Employee is Present ");
+            empHrs = 8;
         } else {
             System.out.println("Employee is Absent ");
         }
+    }
+
+    /**
+     * Method for calculating daily wage for employee.
+     */
+    public void calculatingWage() {
+        empWage = empHrs * EMP_RATE_PER_HOUR;
+        System.out.println("Employee Wage is : " + empWage);
     }
 }
 
@@ -32,11 +44,13 @@ public class EmpWageComputation {
 
     /**
      * This is main method, This is a starting point of EmpWageComputation program.
+     *
      * @param args
      */
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
         EmployeeWage EmployeeWageObject = new EmployeeWage();
         EmployeeWageObject.attendance();
+        EmployeeWageObject.calculatingWage();
     }
 }
