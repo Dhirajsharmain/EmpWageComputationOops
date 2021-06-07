@@ -26,3 +26,9 @@
 **UC7-ClassMethod**
 
 *_Description_** : Refactor the Code to write a Class Method to Compute Employee Wage - Use Class Method and Class Variables.
+
+**UC8-WageForMultipleCompanies**
+
+*_Description_** : Compute Employee Wage for multiple companies 
+- Note: Each Company has its own wage, number of working days and working hours per month 
+- Use Class Method with function parameters instead of Class Variables
