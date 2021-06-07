@@ -6,3 +6,7 @@
 **UC2-CalculatingDailyWage**
 
 **_Description_** : Calculate Daily Employee Wage - Assume wage per hour is 20 - Assume full day hour is 8.
+
+**UC3-PartTimeEmployee**
+
+**_Description_** : Add Part time Employee & Wage - Assume Part time Hour is 8
