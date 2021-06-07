@@ -22,3 +22,7 @@
 **UC6-CalcutateWageWithCondition**
 
 **_Description_** : Calculate Wages till a condition of total working hours or days is reached for a month - Assume 100 hours and 20 days.
+
+**UC7-ClassMethod**
+
+*_Description_** : Refactor the Code to write a Class Method to Compute Employee Wage - Use Class Method and Class Variables.

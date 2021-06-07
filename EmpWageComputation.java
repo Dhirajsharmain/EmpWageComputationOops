@@ -18,11 +18,12 @@ public class EmpWageComputation {
     public static final int EMP_RATE_PER_HOUR = 20;
     public static final int MAX_HRS_IN_MONTHS = 100;
 
+    //Class Variables
     public static int empHrs = 0, totalWorkingDays = 0, totalEmpHrs = 0;
     public static int numOfWorkingDays = 20;
 
     /**
-     * Method for computing the wage for employee.
+     * Class method for computing the wage for employee.
      */
     private static void wageComputation() {
         Random random = new Random();
