@@ -9,34 +9,31 @@
 
 package bridgelabz;
 
+
 import java.util.Random;
 
-class EmployeeWage {
-    int isPresent = 1;
+public class EmpWageComputation {
 
-    /**
-     * Method for taking attendance of employee.
-     */
-    public void attendance() {
+    public static final int IS_PRESENT = 1;
+
+    private static void wageComputation() {
         Random random = new Random();
         int empCheck = (int) Math.floor(Math.random() * 10) % 2;
-        if (empCheck == isPresent) {
+        if (empCheck == IS_PRESENT) {
             System.out.println("Employee is Present ");
         } else {
             System.out.println("Employee is Absent ");
         }
     }
-}
 
-public class EmpWageComputation {
 
     /**
      * This is main method, This is a starting point of EmpWageComputation program.
+     *
      * @param args
      */
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
-        EmployeeWage EmployeeWageObject = new EmployeeWage();
-        EmployeeWageObject.attendance();
+        wageComputation();
     }
 }
