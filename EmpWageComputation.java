@@ -17,14 +17,13 @@ public class EmpWageComputation {
     public static final int IS_PART_TIME = 2;
 
 
-
     /**
      * Class method for computing the wage for employee.
      */
     private static void wageComputation(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMont) {
         int empHrs = 0, totalWorkingDays = 0, totalEmpHrs = 0;
         Random random = new Random();
-        while ( totalEmpHrs < maxHoursPerMont && totalWorkingDays < numOfWorkingDays ) {
+        while (totalEmpHrs < maxHoursPerMont && totalWorkingDays < numOfWorkingDays) {
             int empCheck = (int) Math.floor(Math.random() * 10) % 3;
             switch (empCheck) {
                 case IS_FULL_TIME:
@@ -39,7 +38,7 @@ public class EmpWageComputation {
         }
 
         int empWage = totalEmpHrs * empRatePerHour;
-        System.out.println("Employee Wage for company "+ company+ " is : " + empWage);
+        System.out.println("Employee Wage for company " + company + " is : " + empWage);
     }
 
     /**
