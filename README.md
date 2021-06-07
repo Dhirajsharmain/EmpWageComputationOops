@@ -14,3 +14,7 @@
 **UC4-UC3WithSwitchCase**
 
 **_Description_** : Solve UC3 using Switch Case Statement.
+
+**UC5-WageForAMonth**
+
+**_Description_** : Calculating Wages for a Month - Assume 20 Working Day per Month.
