@@ -13,7 +13,8 @@ import java.util.Random;
 
 class EmployeeWage {
     public static final int EMP_RATE_PER_HOUR = 20;
-    int isPresent = 1;
+    int isFullTime = 1;
+    int isPartTime = 2;
     int empHrs = 0;
     int empWage;
 
@@ -22,10 +23,13 @@ class EmployeeWage {
      */
     public void attendance() {
         Random random = new Random();
-        int empCheck = (int) Math.floor(Math.random() * 10) % 2;
-        if (empCheck == isPresent) {
-            System.out.println("Employee is Present ");
+        int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+        if (empCheck == isFullTime) {
+            System.out.println("Employee is Present Full Time");
             empHrs = 8;
+        } else if (empCheck == isPartTime) {
+            System.out.println("Employee is Present Part Time ");
+            empHrs = 4;
         } else {
             System.out.println("Employee is Absent ");
         }
