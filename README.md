@@ -9,4 +9,8 @@
 
 **UC3-PartTimeEmployee**
 
-**_Description_** : Add Part time Employee & Wage - Assume Part time Hour is 8
+**_Description_** : Add Part time Employee & Wage - Assume Part time Hour is 8.
+
+**UC4-UC3WithSwitchCase**
+
+**_Description_** : Solve UC3 using Switch Case Statement.
