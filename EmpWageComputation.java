@@ -16,11 +16,23 @@ public class EmpWageComputation {
     public static final int IS_FULL_TIME = 1;
     public static final int IS_PART_TIME = 2;
 
+    private final String company;
+    private final int empRatePerHour;
+    private final int numOfWorkingDays;
+    private final int maxHoursPerMont;
+
+    public EmpWageComputation(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMont) {
+        this.company = company;
+        this.empRatePerHour = empRatePerHour;
+        this.numOfWorkingDays = numOfWorkingDays;
+        this.maxHoursPerMont = maxHoursPerMont;
+    }
+
 
     /**
      * Class method for computing the wage for employee.
      */
-    private static void wageComputation(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMont) {
+    private void wageComputation() {
         int empHrs = 0, totalWorkingDays = 0, totalEmpHrs = 0;
         Random random = new Random();
         while (totalEmpHrs < maxHoursPerMont && totalWorkingDays < numOfWorkingDays) {
@@ -48,7 +60,9 @@ public class EmpWageComputation {
      */
     public static void main(String[] args) {
         System.out.println("Welcome to Employee Wage Computation Program on Master Branch");
-        wageComputation("dMArt", 20, 2, 10);
-        wageComputation("Reliance", 30, 4, 14);
+        EmpWageComputation dMart = new EmpWageComputation("dMart", 20, 2, 10);
+        dMart.wageComputation();
+        EmpWageComputation reliance = new EmpWageComputation("reliance", 30, 4, 14);
+        reliance.wageComputation();
     }
 }
